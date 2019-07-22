@@ -32,9 +32,10 @@ void f3() {
     /* Read beyond the bounds of a string */
     float x = 3.141592653;
     char array[] = "allen";
-
+    int bell = 7;
     printf("%c\n", array[-2]);
     printf("%c\n", array[-1]);
+    printf("%c\n", bell);
 }
 
 void f4() {
@@ -46,9 +47,8 @@ void f4() {
 
 int main()
 {
-    //    f1();
-    //f2();
-    //f3();
+    f1();
+    f2();
+    f3();
     f4();
 }
-

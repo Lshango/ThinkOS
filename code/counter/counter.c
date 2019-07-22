@@ -13,7 +13,7 @@ License: GNU GPLv3
 
 void perror_exit(char *s)
 {
-  perror(s);  
+  perror(s);
   exit(-1);
 }
 
@@ -84,6 +84,7 @@ int main()
   for (i=0; i<NUM_CHILDREN; i++) {
     join_thread(child[i]);
   }
+  printf("last counter = %d\n", shared->counter);
 
   return 0;
 }
